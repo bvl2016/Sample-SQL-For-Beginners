@@ -4,7 +4,7 @@ In here, I will share what I have learned and understood!
 
 For the practice, I'm using PostgreSQL!
 
-# Data types
+# Date types
 
 PostgreSQL supports several data types that can be used to store date and time values. 
 Here is a list of some of the commonly used date and time data types in PostgreSQL:
