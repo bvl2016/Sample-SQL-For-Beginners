@@ -57,3 +57,62 @@ SELECT duration FROM events
 SELECT CURRENT_DATE, CURRENT_TIME, CURRENT_TIMESTAMP, LOCALTIME,LOCALTIMESTAMP
 ```
 
+# II) Data Definition
+
+## Creating schema
+Organizing and grouping tables into logical units.
+``` sql
+CREATE SCHEMA schema_name (other than the public one).
+```
+
+## Creating tables 
+Create table statement with optional table constraint and default value. The next following SQL command creates a table with all data types available in PostgreSQL.
+
+``` sql
+CREATE TABLE example_table (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    date DATE,
+    time TIME WITH TIME ZONE,
+    datetime TIMESTAMP WITH TIME ZONE,
+    timestamp TIMESTAMP WITH TIME ZONE,
+    boolean BOOLEAN,
+    decimal NUMERIC,
+    real REAL,
+    double DOUBLE PRECISION,
+    smallint SMALLINT,
+    bigint BIGINT,
+    blob BYTEA
+);
+```
+
+This creates a table called example_table with the following columns:
+
+    id: a serial column that is the primary key for the table
+    name: a text column that cannot contain a null value
+    date: a date column
+    time: a time with time zone column
+    datetime: a timestamp with time zone column
+    timestamp: a timestamp with time zone column
+    boolean: a boolean column
+    decimal: a numeric column with a decimal precision
+    real: a real (floating point) column
+    double: a double precision (floating point) column
+    smallint: a small integer column
+    bigint: a big integer column
+    blob: a bytea column for storing binary data
+
+Note that the time, timestamp, and bytea data types are specific to PostgreSQL.
+
+## Creating indexes
+``` sql
+CREATE INDEX idx__name
+ON table_name
+USING (columns_names)
+```
+
+## Creating views
+This is an imaginary table
+``` sql
+CREATE VIEW view_name AS SELECT QUERY
+```
