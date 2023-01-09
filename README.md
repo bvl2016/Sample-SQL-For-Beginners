@@ -1,4 +1,4 @@
-# Sample-SQL-For-Beginners
+# Sample-SQL
 
 In here, I will share what I have learned and understood! 
 
