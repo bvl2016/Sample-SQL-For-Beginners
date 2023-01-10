@@ -116,3 +116,6 @@ This is an imaginary table
 ``` sql
 CREATE VIEW view_name AS SELECT QUERY
 ```
+# III) Data Manipulation
+
+From this part, I use Netflix datasets to practice.
