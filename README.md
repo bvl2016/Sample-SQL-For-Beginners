@@ -69,7 +69,7 @@ CREATE SCHEMA schema_name (other than the public one).
 Create table statement with optional table constraint and default value. The next following SQL command creates a table with all data types available in PostgreSQL.
 
 ``` sql
-CREATE TABLE example_table (
+CREATE TABLE table_name (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
     date DATE,
@@ -105,6 +105,7 @@ This creates a table called example_table with the following columns:
 Note that the time, timestamp, and bytea data types are specific to PostgreSQL.
 
 ## Creating indexes
+
 ``` sql
 CREATE INDEX idx__name
 ON table_name
@@ -116,6 +117,45 @@ This is an imaginary table
 ``` sql
 CREATE VIEW view_name AS SELECT QUERY
 ```
+
+## Altering table
+If your table is already created and you want to bring some modifications, you can modify it.
+
+- Adding columns
+
+Altering table to add new column(s)
+``` sql
+ALTER TABLE table_name ADD new_column DataType OptionalTableConstraint DEFAULT default_value; 
+```
+- Adding constraint (foreign key)
+
+``` sql
+ALTER TABLE table_name_1
+ADD FOREIGN KEY (id2) REFERENCES table_name_2(id2);
+```
+
+- Removing columns
+
+Altering table to remove column(s)
+``` sql
+ALTER TABLE table_name DROP column_to_be_deleted; 
+```
+
+- Renaming the table
+Altering table name
+``` sql
+ALTER TABLE table_name RENAME TO new_table_name; 
+```
+
+
+## Removing table
+If you no longer need a table, you can remove it.
+
+``` sql
+DROP TABLE table_name;
+``` 
+
+
 # III) Data Manipulation
 
 From this part, I use Netflix datasets to practice.
