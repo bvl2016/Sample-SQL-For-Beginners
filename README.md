@@ -53,6 +53,7 @@ This creates a table called example_table with the following columns:
 Note that the time, timestamp, and bytea data types are specific to PostgreSQL.
 
 ## Creating indexes
+Index improves the speed of querying through the table's data.
 
 ``` sql
 CREATE INDEX idx__name
