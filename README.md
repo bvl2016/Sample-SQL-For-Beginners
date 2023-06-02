@@ -166,6 +166,8 @@ From this part, I use Netflix datasets to practice.
 
 # IV) Psql tips
 
+1) Filling the NULL
+
 For null values, we can fill them with emoji. In here, for example, 
 ``` sql
 psql -U username --dbname netflix -c '\pset border 2' -c '\pset null 🦞️' -c 'select showid, duration_minutes from netflix_titles limit 5;'
