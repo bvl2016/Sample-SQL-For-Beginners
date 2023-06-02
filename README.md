@@ -163,3 +163,16 @@ SELECT CURRENT_DATE, CURRENT_TIME, CURRENT_TIMESTAMP, LOCALTIME,LOCALTIMESTAMP
 # III) Data Manipulation
 
 From this part, I use Netflix datasets to practice.
+
+# IV) Psql tips
+
+For null values, we can fill them with emoji. In here, for example, 
+``` sql
+psql -U username --dbname netflix -c '\pset border 2' -c '\pset null 🦞️' -c 'select showid, duration_minutes from netflix_titles limit 5;'
+``` 
+In single command line, we make access to the database 'netflix', decorate the output with border, assign the emoji for null values, and launch the query.
+
+The output is :
+![image](https://github.com/bvl2016/Sample-SQL-For-Beginners/assets/16953165/e4bf11b0-ebff-412f-8dc2-2c7e2a73f7f1)
+
+
