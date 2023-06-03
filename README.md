@@ -173,8 +173,7 @@ This command :
 - executes the query select * from netflix_titles limit 2, which means select only 2 rows for all the data from netflix_titles table;
 - the parameter -H gets the output in HTML format.
 
-![Uploading image.png…]()
-
+![html](https://github.com/bvl2016/Sample-SQL-For-Beginners/assets/16953165/651b5f0a-dbbf-4e1b-996e-1c9b1bfddc7d)
 
 
 # IV) Psql tips
