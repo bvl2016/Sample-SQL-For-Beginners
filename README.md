@@ -177,4 +177,15 @@ In single command line, we make access to the database 'netflix', decorate the o
 The output is :
 ![image](https://github.com/bvl2016/Sample-SQL-For-Beginners/assets/16953165/e4bf11b0-ebff-412f-8dc2-2c7e2a73f7f1)
 
+2) Database connection
 
+There are two accepted formats for connection strings
+
+## Plain keyword/value string
+``` sql
+psql 'user=username host=hostname port=portnumber dbname=dbname'
+``` 
+## URIs
+``` sql
+psql postgresql://user:secret@host:port/dbname
+``` 
