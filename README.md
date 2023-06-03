@@ -164,6 +164,19 @@ SELECT CURRENT_DATE, CURRENT_TIME, CURRENT_TIMESTAMP, LOCALTIME,LOCALTIMESTAMP
 
 From this part, I use Netflix datasets to practice.
 
+1) Using command line for quering (SELECT)
+``` sql
+psql postgresql://user@localhost/netflix -H -c 'select * from netflix_titles limit 2;'
+``` 
+This command :
+- connects to the database netflix;
+- executes the query select * from netflix_titles limit 2, which means select only 2 rows for all the data from netflix_titles table;
+- the parameter -H gets the output in HTML format.
+
+![Uploading image.png…]()
+
+
+
 # IV) Psql tips
 
 1) Filling the NULL
