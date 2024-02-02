@@ -52,6 +52,17 @@ This creates a table called example_table with the following columns:
 
 Note that the time, timestamp, and bytea data types are specific to PostgreSQL.
 
+## Constraint of integrity
+
+Here is the list of constraints which are rules enforced on columns to maintain data integrity :
+
+    - PRIMARY KEY: Uniquely identifies a record in the table.
+    - NOT NULL: Column must have a value.
+    - UNIQUE: Column must have a unique value.
+    - FOREIGN KEY: Links two tables together.
+    - CHECK: Ensures that the value in the column satisfies a specific condition.
+
+
 ## Creating indexes
 Index improves the speed of querying through the table's data.
 
